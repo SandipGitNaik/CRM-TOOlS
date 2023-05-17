@@ -7,6 +7,7 @@ import FeedbackReview from './Component/FeedbackReviewComponent/FeedbackReview';
 import Menu from './Component/MenuComponents/Menu';
 import Registetr from './Component/RegisterComponent/Register';
 import { BrowserRouter } from 'react-router-dom';
+import Login from './Component/loginComponent/Login';
 
 
 function App() {
@@ -21,6 +22,8 @@ function App() {
       <Route path='/rew' element={<FeedbackReview/>}></Route>
       <Route path='/reg' element={<Registetr/>}></Route>
       <Route path='/fed' element={<Feedback2/>}></Route>
+      <Route path='/lo' element={<Login/>}></Route>
+
 
     </Routes>
     </BrowserRouter>

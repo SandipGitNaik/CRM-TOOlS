@@ -27,7 +27,7 @@ export default class Menu extends Component{
     <a className="nav-link e" href="/rew">Reviews</a>
   </li>
   <li className="nav-item">
-    <a className="nav-link e" href="/reg">Register</a>
+    <a className="nav-link e" href="/lo">login</a>
   </li>
 </ul>
 
