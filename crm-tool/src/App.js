@@ -19,6 +19,9 @@ function App() {
     <Routes>
       <Route path='/emp' element={<Employe/>}></Route>
       <Route path='/rew' element={<FeedbackReview/>}></Route>
+      <Route path='/reg' element={<Registetr/>}></Route>
+      <Route path='/fed' element={<Feedback2/>}></Route>
+
     </Routes>
     </BrowserRouter>
     </div>

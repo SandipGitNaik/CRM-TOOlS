@@ -1,39 +1,39 @@
 import { Component } from "react";
-
+import'./Menu.css'  
 export default class Menu extends Component{
-    render(){
-        return(
-            <div className="container">
-              <nav class="navbar navbar-expand-lg  bg-dark">
-  <div class="container-fluid">
-   
- 
-    <a class="navbar-brand" href="#">
-      <img src="https://www.vcubesoftsolutions.com/wp-content/uploads/2020/10/V-CUBE-Logo-4-scaled-e1636039304265.jpg" alt="Bootstrap" width="30" height="24         "/>
-    </a>
-  </div>
+  render(){
+    return(<div className="conainer-fluid" >
+        <div className="container" >
+        <nav className="navbar navbar-expand-lg i">
+  <a className="navbar-brand f" href="#">V Cube Crm</a>
+  <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span className="navbar-toggler-icon"></span>
+  </button>
+  <div className="collapse navbar-collapse" id="navbarNav">
+  <ul className="navbar-nav " style={{gap:"10px"}}>
+  <li className="nav-item active">
+    <a className="nav-link e" href="/courses">Courses</a>
+  </li>
+  <li className="nav-item">
+    <a className="nav-link e" href="/enquiry">Enquiry</a>
+  </li>
+  <li className="nav-item">
+    <a className="nav-link e" href="/feedback">Feedback</a>
+  </li>
+  <li className="nav-item">
+    <a className="nav-link e" href="Batches">Batches</a>
+  </li>
+  <li className="nav-item">
+    <a className="nav-link e" href="/rew">Reviews</a>
+  </li>
+  <li className="nav-item">
+    <a className="nav-link e" href="/reg">Register</a>
+  </li>
+</ul>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="/emp">Employe Form</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Features</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Pricing</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/rew">Review</a>
-        </li>
-      </ul>
-    </div>
+  </div>
 </nav>
-            </div>
-        )
-    }
+</div>
+    </div>)
+}
 }
