@@ -28,7 +28,7 @@ export default class Login extends Component{
 <a className="btn button" style={{backgroundColor:"GrayText"}}  href="/reg">
     <b>Register now</b>
   </a>
-  <a className="btn button" style={{backgroundColor:"GrayText"}}  s    href="/forgot">
+  <a className="btn button" style={{backgroundColor:"GrayText"}}  s    href="/for">
     Forgot Password
   </a>
   </div>

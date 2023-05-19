@@ -2,7 +2,8 @@
     background-color: blue;
 }
 .cardf{
-    background-color: white;
+    background-color: #ffff;
+    width: 70%;
     }
 .e{
     margin-left: 50px;
@@ -10,8 +11,5 @@
 .card{
     align-items: center;
     border: none;
-    
-}
-input{
-    border-color: chartreuse;
+    width: 100%;
 }

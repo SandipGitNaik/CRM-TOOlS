@@ -8,6 +8,11 @@ import Menu from './Component/MenuComponents/Menu';
 import Registetr from './Component/RegisterComponent/Register';
 import { BrowserRouter } from 'react-router-dom';
 import Login from './Component/loginComponent/Login';
+import Footer from './Component/FooterComponent/Footer';
+import Forgot from './Component/ForgetComponent/Forget';
+import EnquiryData from './Component/EnquiryComponent/Enquiry';
+import Employeget from './Component/EmployGetComponent/Employeget';
+
 
 
 function App() {
@@ -23,10 +28,15 @@ function App() {
       <Route path='/reg' element={<Registetr/>}></Route>
       <Route path='/fed' element={<Feedback2/>}></Route>
       <Route path='/lo' element={<Login/>}></Route>
-
+      <Route path='/for' element={<Forgot/>}></Route>
+      <Route path='/enq' element={<EnquiryData/>}></Route>
+      <Route path='/empg' element={<Employeget/>}></Route>
 
     </Routes>
     </BrowserRouter>
+    <footer>
+      <Footer/>
+    </footer>
     </div>
   );
 }

@@ -37,7 +37,7 @@ export default class Employe extends Component{
         " Emp_Last_Name":this.state.Emp_Last_Name,
         " Emp_Contact_No":this.state.Emp_Contact_No,
          "Emp_Email":this.state.Emp_Email,
-        "Emp_Designation":this.state.class_Experience,
+        "Emp_Designation":this.state.Emp_Designation,
         "Emp_Qulification":this.state.Emp_Qulification,
         "Emp_SSC_Mark":this.state.Emp_SSC_Mark,
         "Emp_HSC_Mark":this.state.Emp_HSC_Mark,
@@ -64,7 +64,7 @@ changeStaet=()=>{
     render(){
         return(
             <div className="container">
-                <div className="row e">
+                <div className="row ">
                    
                <div className="col-4 carde">
                
@@ -83,9 +83,9 @@ changeStaet=()=>{
                  <input type="text" name="" id="Emp_Graduation" placeholder="gradution" onChange={this.registerInputValues} />
                  <input type="text" name="" id="Emp_PG" placeholder="post gradution" onChange={this.registerInputValues} />
                  <input type="text" name="" id="Emp_Gender" placeholder="gender" onChange={this.registerInputValues} />
-
+                           <button  onClick={this.registerSubmit}>send</button>
         
-                </div> <button  onClick={this.registerSubmit}>send</button>
+                </div>
                 </form>
                
             </div>

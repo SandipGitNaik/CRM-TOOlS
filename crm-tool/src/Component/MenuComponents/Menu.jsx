@@ -15,10 +15,10 @@ export default class Menu extends Component{
     <a className="nav-link e" href="/courses">Courses</a>
   </li>
   <li className="nav-item">
-    <a className="nav-link e" href="/enquiry">Enquiry</a>
+    <a className="nav-link e" href="/enq">Enquiry</a>
   </li>
   <li className="nav-item">
-    <a className="nav-link e" href="/feedback">Feedback</a>
+    <a className="nav-link e" href="/fed">Feedback</a>
   </li>
   <li className="nav-item">
     <a className="nav-link e" href="Batches">Batches</a>
@@ -28,6 +28,9 @@ export default class Menu extends Component{
   </li>
   <li className="nav-item">
     <a className="nav-link e" href="/lo">login</a>
+  </li>
+  <li className="nav-item">
+    <a className="nav-link e" href="/empg">Employ</a>
   </li>
 </ul>
 
