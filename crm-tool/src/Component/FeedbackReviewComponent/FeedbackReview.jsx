@@ -14,7 +14,10 @@ export default class FeedbackReview extends Component{
         axios.get("http://localhost:8080/Feedback/get").then(
 
         (res)=>{
+
+            if(res.status==200){
             this.setState(this.state.feedbackreview=res.data)
+            }
         }
         )
     }

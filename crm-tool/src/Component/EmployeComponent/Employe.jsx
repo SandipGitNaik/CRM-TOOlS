@@ -20,7 +20,8 @@ export default class Employe extends Component{
             Emp_PG:'',
             Emp_Gender:'',
             Emp_Created_Date:'',
-            Emp_Updated_Date:''
+            Emp_Updated_Date:'',
+            Emp_Pass:''
         }
     }
 
@@ -45,7 +46,8 @@ export default class Employe extends Component{
         "Emp_PG":this.state.Emp_PG,
         "Emp_Gender":this.state.Emp_Gender,
         "Emp_Created_Date":this.state.Emp_Created_Date,
-        "Emp_Updated_Date":this.state.Emp_Updated_Date 
+        "Emp_Updated_Date":this.state.Emp_Updated_Date ,
+        "Emp_Pass":this.state.Emp_Pass
     }
     
 
@@ -83,6 +85,8 @@ changeStaet=()=>{
                  <input type="text" name="" id="Emp_Graduation" placeholder="gradution" onChange={this.registerInputValues} />
                  <input type="text" name="" id="Emp_PG" placeholder="post gradution" onChange={this.registerInputValues} />
                  <input type="text" name="" id="Emp_Gender" placeholder="gender" onChange={this.registerInputValues} />
+                 <input type="password" name="" id="Emp_Pass" placeholder="password" onChange={this.registerInputValues} />
+
                            <button  onClick={this.registerSubmit}>send</button>
         
                 </div>
