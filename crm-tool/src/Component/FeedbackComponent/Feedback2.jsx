@@ -1,6 +1,7 @@
 import { Component } from "react";
 import './Feedback.css'
 import axios from "axios";
+import { Trainer, Course } from "../EmployGetComponent/trainerget";
 export default class Feedback2 extends Component{
     constructor(){
         super()
@@ -50,15 +51,43 @@ changeStaet=()=>{
     console.log("clicking");
     this.setState({ name:'xyz'})
 }
+getCountry() {
+  return Trainer.map((trainer) => {
+    return <option value={trainer.name}>{trainer.name}
+           </option>;
+  });
+ 
+}
+getCourse(){
+  return Course.map((Cou) => {
+    return <option value={Cou.course}>{Cou.course}
+    </option>;
+  });
+}
+
     render(){
         return(
             <div className="container">
                 <form className="row g-3 needs-validation cardex" >
                 <div className="cardex"><br />
                   <input type="text" placeholder="full name" id= "full_Name" onChange={this.registerInputValues} /> 
-                  <input type="text"  placeholder="course" id="course_name" onChange={this.registerInputValues} /> 
-                  <input type="text" placeholder="trainer name" id="faculty" onChange={this.registerInputValues}  />
+                  
                   <input type="tel" placeholder="mobile no" id="mobile"  onChange={this.registerInputValues}  />
+                <select className="tra"  id="course_name"  onChange={this.registerInputValues}  >
+                  <option value="choose" id="course_name"  disabled selected="selected">Course Name</option>
+                  {this.getCourse()}
+                  </select>
+     
+                 <select 
+      id="faculty"
+      className="tra"
+      placeholder="trainer name"
+      onChange={this.registerInputValues} >
+      <option value="choose" id="faculty" placeholder="trainer name" disabled selected="selected">
+       trainer name
+      </option>
+      {this.getCountry()}
+      </select>
                   <textarea name="" id="suggestion" cols="10" rows="10" placeholder="pass here your suggestion" onChange={this.registerInputValues} ></textarea><br />
                  <input type="date" name="" id="created_date" onChange={this.registerInputValues} />
                  <input type="date" name=""  id="updated_date" onChange={this.registerInputValues} />

@@ -55,3 +55,11 @@ textarea{
     font-size:  px;
     border-top: 1px black solid;
 }
+
+.tra{
+    width: 250px;
+    height: 28px;
+    border-color:#F3BD12 ;
+    border-width: 2px;  
+    margin-left: 20px
+}

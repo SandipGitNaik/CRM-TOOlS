@@ -29,13 +29,13 @@ export default class Employeget extends  Component{
                     {
                         this.state.employdata.map((test)=>
                         <div className=" card cp" style={{width:'27rem',height:'25rem'}}>
-                            <p><b>First Name::</b>{test.emp_First_Name}</p>
-                            <p><b>Last Name::</b>{test.Emp_Last_Name}</p>
-                            <p><b>Contact::</b>{test.Emp_Contact_No}</p>
-                            <p><b>Email::</b>{test.Emp_Email}</p>
-                            <p><b>Disgnation::</b>{test.Emp_Designation}</p>
-                            <p><b>Qulifiction::</b>{test.emp_Qulification}</p>
-                            <p><b>Gender::</b>{test.Emp_Gender}</p>
+                            <p><b>First Name::&nbsp;&nbsp;&nbsp;&nbsp;</b>{test.emp_first_name}</p>
+                            <p><b>Last Name::&nbsp;&nbsp;&nbsp;&nbsp;</b>{test.emp_last_name}</p>
+                            <p><b>Contact::&nbsp;&nbsp;&nbsp;&nbsp;</b>{test.emp_contact_no}</p>
+                            <p><b>Email::&nbsp;&nbsp;&nbsp;&nbsp;</b>{test.emp_email}</p>
+                            <p><b>Disgnation::&nbsp;&nbsp;&nbsp;&nbsp;</b>{test.emp_designation}</p>
+                            <p><b>Qulifiction::&nbsp;&nbsp;&nbsp;&nbsp;</b>{test.emp_qulification}</p>
+                            <p><b>Gender::&nbsp;&nbsp;&nbsp;&nbsp;</b>{test.emp_gender}</p>
                         </div>
                    ) }
                    
