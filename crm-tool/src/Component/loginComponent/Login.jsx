@@ -6,8 +6,8 @@ export default class Login extends Component{
         super(props);
         this.state={
             name:'login',
-            Emp_Email:'',
-            Emp_Pass:''
+            emp_email:'',
+            emp_pass:''
 
         }
       }
@@ -21,14 +21,21 @@ export default class Login extends Component{
         console.log("coming........")
     
     let json={
-        Emp_Email:this.state.Emp_Email,
-        Emp_Pass:this.state.Emp_Pass
+      emp_email:this.state.emp_email,
+      emp_pass:this.state.emp_pass
     }
     axios.post("http://localhost:8080/Emp/login",json).then(
 
     (res)=>{
-        if(res.status==200)
+        if(res.status==200){
       console.log(res)
+      if(res.data.length==0){
+        console.log("plese enter the valid info")
+        
+      }
+    else {
+      localStorage.setItem("user",res.data[0])
+    }}
     }
   )
 }
@@ -50,16 +57,20 @@ console.log(localStorage.getItem("userid"));
         return(
             <div className="container " style={{justifyContent:"center",alignItems:"center",display:"flex"}}>
                 <div className="card ">
-         
+         <div>
+          {
+            localStorage.getItem("user")
+          }
+         </div>
          <form >
       <div class="mb-3">
              <label for="exampleInputEmail1" class="form-label">Email address</label>
-             <input type="email" class="form-control"  id="Emp_Email" aria-describedby="emailHelp" placeholder="email"/>
+             <input type="email" class="form-control"  id="emp_email" aria-describedby="emailHelp" placeholder="email"/>
           <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
     </div>
     <div class="mb-3">
             <label for="exampleInputPassword1" class="form-label">Password</label>
-             <input type="password" class="form-control"  id="Emp_Pass" placeholder="password"/>
+             <input type="password" class="form-control"  id="emp_pass" placeholder="password"/>
   </div>
   <div class="mb-3 form-check">
            <input type="checkbox" class="form-check-input" id="exampleCheck1"/>
@@ -67,7 +78,7 @@ console.log(localStorage.getItem("userid"));
   </div>
 
 </form>
-<button onClick={this.loginWithLocalstorge} >Submit</button>
+<button onClick={this.registerSubmit} >Submit</button>
 
 <div class="d-flex justify-content-between mt-4" >
 <a className="btn button" style={{backgroundColor:"GrayText"}}  href="/reg">
