@@ -26,9 +26,12 @@ export default class Menu extends Component{
   <li className="nav-item">
     <a className="nav-link e" href="/rew">Reviews</a>
   </li>
-  <li className="nav-item">
+  {!localStorage.getItem("user") &&   <li className="nav-item">
     <a className="nav-link e" href="/lo">login</a>
-  </li>
+  </li>}
+  {localStorage.getItem("user") &&   <li className="nav-item">
+    <a className="nav-link e" href="/profile">Profile</a>
+  </li>}
   <li className="nav-item">
     <a className="nav-link e" href="/empg">Employ</a>
   </li>

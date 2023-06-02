@@ -12,6 +12,7 @@ import Forgot from './Component/ForgetComponent/Forget';
 import EnquiryData from './Component/EnquiryComponent/Enquiry';
 import Employeget from './Component/EmployGetComponent/Employeget';
 import Empolye from './Component/EmployeComponent/Empolye';
+import Profile from './Component/profioeComponent/Profile';
 
 
 
@@ -28,11 +29,13 @@ function App() {
       <Route path='/rew' element={<FeedbackReview/>}></Route>
       <Route path='/reg' element={<Registetr/>}></Route>
       <Route path='/fed' element={<Feedback2/>}></Route>
-      <Route path='/lo' element={<Login/>}></Route>
+    <Route path='/lo' element={<Login/>}></Route>
       <Route path='/for' element={<Forgot/>}></Route>
       <Route path='/enq' element={<EnquiryData/>}></Route>
       <Route path='/empg' element={<Employeget/>}></Route>
       <Route path='/emp' element={<Empolye/>}></Route>
+      <Route path='/Profile' element={<Profile/>}></Route>
+
       
     </Routes>
     </BrowserRouter>
