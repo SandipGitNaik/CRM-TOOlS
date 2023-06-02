@@ -83,7 +83,7 @@ console.log(localStorage.getItem("userid"));
 <a className="btn button" style={{backgroundColor:"GrayText"}}  href="/reg">
     <b>Register now</b>
   </a>
-  <a className="btn button" style={{backgroundColor:"GrayText"}}  s    href="/for">
+  <a className="btn button" style={{backgroundColor:"GrayText"}} href="/for">
     Forgot Password
   </a>
   </div>
