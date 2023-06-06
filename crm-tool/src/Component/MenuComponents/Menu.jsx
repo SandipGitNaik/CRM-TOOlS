@@ -3,8 +3,8 @@ import'./Menu.css'
 export default class Menu extends Component{
   render(){
     return(<div className="conainer-fluid" >
-        <div className="container" >
-        <nav className="navbar navbar-expand-lg i">
+      
+        <nav className="navbar navbar-expand-lg i" style={{ height: "3rem"}}>
   <a className="navbar-brand f" href="#">V Cube Crm</a>
   <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span className="navbar-toggler-icon"></span>
@@ -40,6 +40,6 @@ export default class Menu extends Component{
   </div>
 </nav>
 </div>
-    </div>)
+   )
 }
 }

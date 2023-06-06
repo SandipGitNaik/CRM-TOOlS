@@ -81,8 +81,8 @@ console.log(localStorage.getItem("userid"));
 
 <div class="d-flex justify-content-between mt-4" >
 <a className="btn button" style={{backgroundColor:"GrayText"}}  href="/reg">
-    <b>Register now</b>
-  </a>
+    <b>Register now</b> 
+  </a>&nbsp;
   <a className="btn button" style={{backgroundColor:"GrayText"}} href="/for">
     Forgot Password
   </a>

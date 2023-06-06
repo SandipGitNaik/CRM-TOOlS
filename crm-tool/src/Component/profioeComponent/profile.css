@@ -1,0 +1,19 @@
+.prof{
+    width: 100rem;
+    background-color:system defult;
+}
+.abcd{
+   
+    margin-left: 12rem;
+    position: relative;
+    top: -100px;
+    border-top: none;
+    contain:inherit;
+
+}
+.profile-img{
+    border-radius: 500px;
+    background-color:lightgray;
+    height:5rem;
+    margin-left: 1.5rem;
+}
