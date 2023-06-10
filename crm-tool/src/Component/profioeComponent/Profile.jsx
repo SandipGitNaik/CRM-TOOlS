@@ -20,31 +20,48 @@ handleClick=()=>{
         return(
             <div className="container ">
                 <div className="row">
-                    <div className="prof">
+                   
    {localStorage.getItem("user") && <>
-<div className="col-md-3 border-right" >
+<div className="col-md-3 col-3 border-right card " style={{width:'18rem',border:"none",backgroundColor:'#9a9e27',marginRight:'2rem'}} >
     <br />          
           <img className="profile-img " src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="" />
-          </div>
+        
     <h5>{this.state.user.emp_first_name}  {this.state.user.emp_last_name}</h5>
-
-    <div className="abcd">
-    <h5> id No::&nbsp;&nbsp; &nbsp;&nbsp;  {this.state.user.emp_ID}</h5>
-    <h5> Email id ::&nbsp;&nbsp; &nbsp;&nbsp;  {this.state.user.emp_email}</h5>
-    <h5> Mo No::&nbsp;&nbsp; &nbsp;&nbsp; {this.state.user.emp_contact_no}</h5>
-    <h5> Role ::&nbsp;&nbsp; &nbsp;&nbsp; {this.state.user.emp_designation}</h5>
-    <h5> Qulification::&nbsp;&nbsp; &nbsp;&nbsp; {this.state.user.emp_qulification}</h5>
-    <h5> Gender::&nbsp;&nbsp; &nbsp;&nbsp; {this.state.user.emp_gender}</h5>
-    <h5> Post gradution::&nbsp;&nbsp; &nbsp;&nbsp; {this.state.user.emp_pg}</h5>
+    <h5 className="text-center">{this.state.user.emp_designation}</h5>
+    <button style={{width:"100px"}} onClick={this.handleClick}>logout</button>
     </div>
-    <button style={{width:"100px"}} onClick={this.handleClick}>logout</button></>
-
+    <div className="col-9">
+      <div className="row">
+      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+ 
+ <div className="collapse navbar-collapse" id="navbarSupportedContent">
+   <ul className="navbar-nav mr-auto">
+     <li className="nav-item active">
+       <a className="nav-link" href="overview">Overview </a>
+     </li>
+   
+     <li className="nav-item">
+       <a className="nav-link" href="editProfile">Edit Profile</a>
+     </li>
+     <li className="nav-item active">
+       <a className="nav-link" href="setting">Setting</a>
+     </li>
+     <li className="nav-item">
+       <a className="nav-link " href="changePassword">Change Password</a>
+     </li>
+   </ul>
+   
+ </div>
+</nav>       
+    </div>  
+    </div>
+    
+    </>
    }
    
+             
+       </div>
 </div>
-</div>
-
-            </div>
         )
     }
 }

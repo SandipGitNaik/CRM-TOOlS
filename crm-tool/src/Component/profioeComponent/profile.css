@@ -1,6 +1,7 @@
+
 .prof{
     width: 100rem;
-    background-color:system defult;
+    background-color:transparent
 }
 .abcd{
    
@@ -14,6 +15,9 @@
 .profile-img{
     border-radius: 500px;
     background-color:lightgray;
-    height:5rem;
-    margin-left: 1.5rem;
+    height:10rem;
+    
+}
+h5.text-center{
+    text-align: center;
 }

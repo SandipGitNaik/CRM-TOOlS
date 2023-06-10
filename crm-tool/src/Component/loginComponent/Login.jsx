@@ -36,6 +36,7 @@ export default class Login extends Component{
     else {
       console.log("result of user :: "+res.data[0])
       localStorage.setItem("user",JSON.stringify( res.data[0]))
+window.location.replace("/profile")
     }}
     }
   )
@@ -80,10 +81,10 @@ console.log(localStorage.getItem("userid"));
 <button onClick={this.registerSubmit} >Submit</button>
 
 <div class="d-flex justify-content-between mt-4" >
-<a className="btn button" style={{backgroundColor:"GrayText"}}  href="/reg">
+<a className="btn button" style={{backgroundColor:"GrayText"}}  href="/register">
     <b>Register now</b> 
   </a>&nbsp;
-  <a className="btn button" style={{backgroundColor:"GrayText"}} href="/for">
+  <a className="btn button" style={{backgroundColor:"GrayText"}} href="/forgot">
     Forgot Password
   </a>
   </div>
