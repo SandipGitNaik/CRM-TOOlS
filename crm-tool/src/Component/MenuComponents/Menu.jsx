@@ -11,11 +11,9 @@ export default class Menu extends Component{
   </button>
   <div className="collapse navbar-collapse" id="navbarNav">
   <ul className="navbar-nav " style={{gap:"10px"}}>
-  <li className="nav-item active">
-    <a className="nav-link e" href="/courses">Courses</a>
-  </li>
+  
   <li className="nav-item">
-    <a className="nav-link e" href="/enq">Enquiry</a>
+    <a className="nav-link e" href="/enquiry">Enquiry</a>
   </li>
   <li className="nav-item">
     <a className="nav-link e" href="/feedback">Feedback</a>
@@ -24,7 +22,7 @@ export default class Menu extends Component{
     <a className="nav-link e" href="Batches">Batches</a>
   </li>
   <li className="nav-item">
-    <a className="nav-link e" href="/rew">Reviews</a>
+    <a className="nav-link e" href="/review">Reviews</a>
   </li>
   {!localStorage.getItem("user") &&   <li className="nav-item">
     <a className="nav-link e" href="/login">login</a>

@@ -21,3 +21,17 @@
 h5.text-center{
     text-align: center;
 }
+.overview-style{
+    padding-left: 1rem;
+    background-color: #FFD90A;
+    background: transparent;
+  font-family: Georgia, serif;
+  font-size: large;
+  font-weight: bold;
+  font-style: italic;
+      margin-right: 2rem;
+    border-radius: 1rem;
+}
+h4:hover{
+    background-color: #FFD90A;
+}

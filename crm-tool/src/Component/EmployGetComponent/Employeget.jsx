@@ -15,8 +15,8 @@ export default class Employeget extends  Component{
 
          (res)=>{
             this.setState(this.state.employdata=res.data)
-            console.log("result"+this.state.employdata)
-            console.log("result")
+          //  console.log("result"+this.state.employdata)
+            //console.log("result")
          }
         ) 
     }

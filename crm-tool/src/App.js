@@ -13,10 +13,8 @@ import EnquiryData from './Component/EnquiryComponent/Enquiry';
 import Employeget from './Component/EmployGetComponent/Employeget';
 import Empolye from './Component/EmployeComponent/Empolye';
 import Profile from './Component/profioeComponent/Profile';
-import Overview from './Component/profioeComponent/overview';
-import ChangePassword from './Component/profioeComponent/ChangePassword';
+
 import Register from './Component/RegistertdComponent/Register';
-import EditProfile from './Component/profioeComponent/EditProfile';
 
 
 
@@ -41,10 +39,7 @@ function App() {
       <Route path='/empployget' element={<Employeget/>}></Route>
       <Route path='/empolye' element={<Empolye/>}></Route>
       <Route path='/Profile' element={<Profile/>}></Route>
-      <Route path='/overview' element={<Overview/>}></Route>
-      <Route path='/changePassword' element={<ChangePassword/>}></Route>
-      <Route path='/editProfile' element={<EditProfile/>}></Route>
-
+    
     
       
     </Routes>

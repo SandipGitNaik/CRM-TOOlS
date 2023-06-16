@@ -69,30 +69,36 @@ getCourse(){
         return(
             <div className="container">
                 <form className="row g-3 needs-validation cardex" >
-                <div className="cardex"><br />
+                <div className="cardefx"><br />
+                <label htmlFor="">Full Name</label>
                   <input type="text" placeholder="full name" id= "full_Name" onChange={this.registerInputValues} /> 
-                  
+                  <label htmlFor="">Mobile No</label>
                   <input type="tel" placeholder="mobile no" id="mobile"  onChange={this.registerInputValues}  />
-                <select className="tra"  id="course_name"  onChange={this.registerInputValues}  >
+                  
+                  <label htmlFor="">Course</label>
+                <select className="tra"  id="course_name"  style={{width:"90%"}}  onChange={this.registerInputValues}  >
                   <option value="choose" id="course_name"  disabled selected="selected">Course Name</option>
                   {this.getCourse()}
                   </select>
-     
+                 <label htmlFor="">Trainer Name</label>
                  <select 
       id="faculty"
       className="tra"
-      placeholder="trainer name"
+      placeholder="trainer name" style={{width:"90%"}}
       onChange={this.registerInputValues} >
       <option value="choose" id="faculty" placeholder="trainer name" disabled selected="selected">
        trainer name
       </option>
       {this.getCountry()}
       </select>
+      <br /><br />
+      <label htmlFor="">suggestion </label>
                   <textarea name="" id="suggestion" cols="10" rows="10" placeholder="pass here your suggestion" onChange={this.registerInputValues} ></textarea><br />
                  <input type="date" name="" id="created_date" onChange={this.registerInputValues} />
                  <input type="date" name=""  id="updated_date" onChange={this.registerInputValues} />
                   <div>
                             <p className="abc">please provid your feedback how its teach</p>
+
                           <div className="form-check form-check-inline">
   <input className="form-check-input" type="radio" name="inlineRadioOptions" id="class_Experience" value="1" onChange={this.registerInputValues}/>
   <label className="form-check-label" >Excellent</label>
@@ -105,10 +111,10 @@ getCourse(){
   <input className="form-check-input" type="radio" name="inlineRadioOptions" id="class_Experience" value="3" onChange={this.registerInputValues} />
   <label className="form-check-label"  >Avrage</label>
 </div>
-</div>
+</div>                <button  onClick={this.registerSubmit}>send</button>
                 </div>
                 </form>
-                <button  onClick={this.registerSubmit}>send</button>
+
             </div>
         )
     }
