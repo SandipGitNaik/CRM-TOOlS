@@ -7,7 +7,7 @@ export default class EditProfile extends Component{
         this.state={
             name:'update',
             emp_ID:'',
-            emp_first_name:'',
+            emp_first_name:'hi',
             emp_last_name:'',
             emp_contact_no:'',
             emp_email:'',
@@ -35,7 +35,7 @@ registerSubmit=()=>{
 
     let json ={
 
-       "emp_ID":this.state.emp_ID,
+       "emp_ID":30,
        "emp_first_name":this.state.emp_first_name,
        "emp_last_name":this.state.emp_last_name,
        "emp_contact_no":this.state.emp_contact_no,
@@ -72,7 +72,7 @@ changeStaet=()=>{
             <div className="container ">
                  <div className="card"style={{border:'none'}}>
             <div className="row">
-             <h5 className="col-4">ID</h5> <h5 className="col-8"><input type="text" id="emp_ID" value={this.state.user.emp_ID }  onChange={this.registerInputValues} /></h5>
+             <h5 className="col-4">ID</h5> <h5 className="col-8"><input type="text" id="emp_ID"  onChange={this.registerInputValues} /></h5>
                 <h5 className="col-4">First Name</h5> <h5 className="col-8"><input type="text"id="emp_first_name" placeholder={this.state.user.emp_last_name} onChange={this.registerInputValues}/></h5>
                 <h5 className="col-4">Last Name</h5> <h5 className="col-8"><input type="text" id="emp_last_name"onChange={this.registerInputValues} /></h5>
                 <h5 className="col-4">Email</h5> <h5 className="col-8"><input type="email" id="emp_email"onChange={this.registerInputValues} /></h5>
@@ -82,9 +82,7 @@ changeStaet=()=>{
                 <h5 className="col-4">PG</h5> <h5 className="col-8"><input type="text" id="emp_pg"onChange={this.registerInputValues}/></h5>
                 <h5 className="col-4"> join date</h5> <h5 className="col-8"><input type="date" id="emp_created_date"onChange={this.registerInputValues}/></h5>
                 <h5 className="col-4"> update date</h5> <h5 className="col-8"><input type="date" id="emp_updated_date"onChange={this.registerInputValues}/></h5>
-
-                
-                </div>
+           </div>
                 <button onClick={this.registerSubmit}>Save </button>
                 </div>
             </div>

@@ -1,6 +1,6 @@
 import axios from "axios";
 import { Component } from "react";
-import './Employe.css'
+import'./Empolye.css'
 
 export default class Empolye extends Component{
     constructor(){
@@ -60,22 +60,34 @@ export default class Empolye extends Component{
             <div className="container" style={{justifyContent:"center",alignItems:"center",display:"flex"}}>
                                <div className="col-6  cardf">
                 <form >
-                <div className="card"><br />
+                <div className="cardEmpolye"><br />
+                <label htmlFor="">First Name</label>
                   <input  type="text" placeholder="first name" id= "emp_first_name" onChange={this.registerInputValues} /> 
+                  <label htmlFor="">Last Name</label>
                   <input type="text"  placeholder="last name" id="emp_last_name" onChange={this.registerInputValues} /> 
+                  <label htmlFor="">Contact No</label>
                   <input type="tel" placeholder="contact bo" id="emp_contact_no" onChange={this.registerInputValues}  />
-                  <input type="text" placeholder="mail id" id="emp_email"  onChange={this.registerInputValues}  />
+                  <label htmlFor="">Mail Id</label>
+                  <input type="email" placeholder="mail id" id="emp_email"  onChange={this.registerInputValues}  />
+                  <label htmlFor="">Role</label>
                  <input type="text" name="" id="emp_designation" placeholder="designation" onChange={this.registerInputValues} />
+                 <label htmlFor="">Qulifiction</label>
                  <input type="text" name="" id="emp_qulification" placeholder="Qulification" onChange={this.registerInputValues} />
+                 <label htmlFor="">SSC Mark</label>
                  <input type="text" name="" id="emp_ssc_mark" placeholder="10th mark" onChange={this.registerInputValues} />
+                 <label htmlFor="">HSC Marks</label>
                  <input type="text" name="" id="emp_hsc_mark" placeholder="12th mark" onChange={this.registerInputValues} />
+                 <label htmlFor="">Gradution</label>
                  <input type="text" name="" id="emp_graduation" placeholder="gradution" onChange={this.registerInputValues} />
+                 <label htmlFor="">Post Gradution</label>
                  <input type="text" name="" id="emp_pg" placeholder="post gradution" onChange={this.registerInputValues} />
+                 <label htmlFor="">Gender</label>
                  <input type="text" name="" id="emp_gender" placeholder="gender" onChange={this.registerInputValues} />
+                 <label htmlFor="">Password</label>
                  <input type="password" name="" id="emp_pass" placeholder="password" onChange={this.registerInputValues} />
-
+                 <button  onClick={this.registerSubmit}>send</button>
         
-                </div> <button  onClick={this.registerSubmit}>send</button>
+                </div> 
                 </form>
                
             </div>

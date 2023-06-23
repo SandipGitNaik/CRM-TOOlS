@@ -7,7 +7,8 @@ export default class Login extends Component{
         this.state={
             name:'login',
             emp_email:'',
-            emp_pass:''
+            emp_pass:'',
+            message:false
 
         }
       }
@@ -27,13 +28,16 @@ export default class Login extends Component{
     axios.post("http://localhost:8080/Emp/login",json).then(
 
     (res)=>{
-        if(res.status==200){
+        if(res.status===200){
       console.log(res)
-      if(res.data.length==0){
+      if(res.data.length===0){
+        this.setState({message:true})
         console.log("plese enter the valid user information")
         
       }
     else {
+      this.setState({message:false})
+
       console.log("result of user :: "+res.data[0])
       localStorage.setItem("user",JSON.stringify( res.data[0]))
 window.location.replace("/profile")
@@ -78,6 +82,7 @@ console.log(localStorage.getItem("userid"));
   </div>
 
 </form>
+{this.state.message && <div className="alert alert-primary">Please enter valid deatils</div>}
 <button onClick={this.registerSubmit} >Submit</button>
 
 <div class="d-flex justify-content-between mt-4" >
@@ -88,6 +93,7 @@ console.log(localStorage.getItem("userid"));
     Forgot Password
   </a>
   </div>
+
         
                 </div>
             </div>

@@ -35,3 +35,6 @@ h5.text-center{
 h4:hover{
     background-color: #FFD90A;
 }
+img:hover{
+    scale: 80%;
+}

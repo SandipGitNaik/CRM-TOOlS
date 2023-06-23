@@ -71,4 +71,4 @@ export default class EnquiryData extends Component{
 
         </div>)
     }
-}
+}   
